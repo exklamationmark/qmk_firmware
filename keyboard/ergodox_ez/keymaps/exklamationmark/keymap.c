@@ -287,7 +287,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |         |         |         |         |         |         |         |           |         |         |         |         |         |         |         |
  * |---------+---------+---------+---------+---------+-------------------'           '-------------------+---------+---------+---------+---------+---------|
  * |         |         |         |         |         |                                                   |         |         |         |         |         |
- * |         |         |         |         |         |                                                   |         |         |         |         |         |
+ * |         |         |         |         |         |                                                   |         |         |         |         | TG:BASE |
  * |         |         |         |         |         |                                                   |         |         |         |         |         |
  * '-------------------------------------------------'                                                   '-------------------------------------------------'
  *
@@ -325,7 +325,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_F12,
                   KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_TRNS,  KC_NO,
         KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_TRNS,  KC_NO,
-                            KC_NO,    KC_NO,    KC_NO,    KC_NO,    TG(BASE),
+                            KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_TRNS,
         //-----------------------------------------------------------------------------------------------//
         KC_TRNS,  KC_TRNS,
         KC_TRNS,  
@@ -371,20 +371,15 @@ void matrix_scan_user(void) {
       // TODO: Make this relevant to the ErgoDox EZ.
         case SYMB:
             ergodox_right_led_3_on();
-            ergodox_right_led_2_off();
-            ergodox_right_led_1_off();
             break;
         case NUM:
-            ergodox_right_led_3_off();
             ergodox_right_led_2_on();
-            ergodox_right_led_1_off();
+            break;
         case NAV:
-            ergodox_right_led_3_on();
             ergodox_right_led_2_on();
-            ergodox_right_led_1_off();
+            ergodox_right_led_3_on();
+            break;
         case MISC:
-            ergodox_right_led_3_off();
-            ergodox_right_led_2_off();
             ergodox_right_led_1_on();
             break;
         default:
