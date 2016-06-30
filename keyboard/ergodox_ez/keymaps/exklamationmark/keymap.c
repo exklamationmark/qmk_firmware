@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 // If it accepts an argument (i.e, is a function), it doesn't need KC_.
 // Otherwise, it needs KC_*
-[BASE] = KEYMAP( 
+[BASE] = KEYMAP(
         //- Left --------------------------------------------------------------------------------------//
         KC_NO,                KC_1,     KC_2,     KC_3,     KC_4,     KC_5,               KC_NO,
         KC_DELT,              KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,               KC_LALT,
@@ -79,19 +79,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *
  * .---------------------------------------------------------------------.           .---------------------------------------------------------------------.
  * |         |         |         |         |         |         |         |           |         |         |         |         |         |         |         |
- * |    `    |         |         |         |    $    |    %    |    *    |           |         |         |         |         |         |         |         |
+ * |         |         |         |    |    |         |         |         |           |         |         |         |         |         |         |         |
  * |         |         |         |         |         |         |         |           |         |         |         |         |         |         |         |
  * |---------+---------+---------+---------+---------+---------+---------|           |---------+---------+---------+---------+---------+---------+---------|
  * |         |         |         |         |         |         |         |           |         |         |         |         |         |         |         |
- * |         |    @    |    !    |    [    |    ]    |    _    |         |           |         |         |         |         |         |         |         |
- * |         |         |         |         |         |         |    ^    |           |         |         |         |         |         |         |         |
+ * |         |         |    ~    |    [    |    ]    |    !    |         |           |         |         |         |         |         |         |         |
+ * |         |         |         |         |         |         |    -    |           |         |         |         |         |         |         |         |
  * |---------+---------+---------+---------+---------+---------|         |           |         |---------+---------+---------+---------+---------+---------|
  * |         |         |         |         |         |         |         |           |         |         |         |         |         |         |         |
- * |         |    +    |    =    |    (    |    )    |    ~    |---------|           |---------|         |         |         |         |         |         |
+ * |    %    |    @    |    =    |    (    |    )    |    _    |---------|           |---------|         |         |         |         |         |         |
  * |         |         |         |         |         |         |         |           |         |         |         |         |         |         |         |
  * |---------+---------+---------+---------+---------+---------|         |           |         |---------+---------+---------+---------+---------+---------|
- * |         |         |         |         |         |         |         |           |         |         |         |         |         |         |         |
- * |         |    -    |    &    |    {    |    }    |    #    |         |           |         |         |         |         |         |         |         |
+ * |         |         |         |         |         |         |    +    |           |         |         |         |         |         |         |         |
+ * |    `    |    ^    |    #    |    {    |    }    |    &    |         |           |         |         |         |         |         |         |         |
  * |         |         |         |         |         |         |         |           |         |         |         |         |         |         |         |
  * |---------+---------+---------+---------+---------+-------------------'           '-------------------+---------+---------+---------+---------+---------|
  * |         |         |         |         |         |                                                   |         |         |         |         |         |
@@ -117,10 +117,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [SYMB] = KEYMAP(
         //- Left ----------------------------------------------------------------------------------------//
-        KC_GRV,   KC_NO,    KC_NO,    KC_NO,    KC_DLR,   KC_PERC,  KC_ASTR,
-        KC_NO,    KC_AT,    KC_EXLM,  KC_LBRC,  KC_RBRC,  KC_UNDS,  KC_CIRC,
-        KC_NO,    KC_PLUS,  KC_EQL,   KC_LPRN,  KC_RPRN,  KC_TILD,
-        KC_NO,    KC_MINS,  KC_AMPR,  KC_LCBR,  KC_RCBR,  KC_HASH,  KC_TRNS,
+        KC_NO,    KC_NO,    KC_NO,    KC_PIPE,  KC_DLR,   KC_PERC,  KC_ASTR,
+        KC_NO,    KC_NO,    KC_TILD,  KC_LBRC,  KC_RBRC,  KC_EXLM,  KC_MINUS,
+        KC_PERC,  KC_AT,    KC_EQL,   KC_LPRN,  KC_RPRN,  KC_UNDS,
+        KC_GRV,   KC_CIRC,  KC_HASH,  KC_LCBR,  KC_RCBR,  KC_AMPR,  KC_PLUS,
         KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,
         //-----------------------------------------------------------------------------------------------//
                                                           KC_TRNS,  KC_TRNS,
@@ -136,7 +136,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                             KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,
         //-----------------------------------------------------------------------------------------------//
         KC_TRNS,  KC_TRNS,
-        KC_TRNS,  
+        KC_TRNS,
         KC_TRNS,  KC_TRNS,  KC_TRNS
     ),
 /* Keymap 2: NUM layer
@@ -264,7 +264,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                             KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,
         //-----------------------------------------------------------------------------------------------//
         KC_TRNS,  KC_TRNS,
-        KC_TRNS,  
+        KC_TRNS,
         KC_TRNS,  KC_TRNS,  KC_TRNS
     ),
 /* Keymap 4: MISC layer
@@ -328,7 +328,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                             KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_TRNS,
         //-----------------------------------------------------------------------------------------------//
         KC_TRNS,  KC_TRNS,
-        KC_TRNS,  
+        KC_TRNS,
         KC_TRNS,  KC_TRNS, KC_TRNS
     ),
 
