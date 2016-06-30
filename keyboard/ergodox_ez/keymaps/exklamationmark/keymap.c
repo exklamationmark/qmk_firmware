@@ -91,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |         |         |         |         |         |         |         |           |         |         |         |         |         |         |         |
  * |---------+---------+---------+---------+---------+---------|         |           |         |---------+---------+---------+---------+---------+---------|
  * |         |         |         |         |         |         |    +    |           |         |         |         |         |         |         |         |
- * |    `    |    ^    |    #    |    {    |    }    |    &    |         |           |         |         |         |         |         |         |         |
+ * |    ^    |    `    |    #    |    {    |    }    |    &    |         |           |         |         |         |         |         |         |         |
  * |         |         |         |         |         |         |         |           |         |         |         |         |         |         |         |
  * |---------+---------+---------+---------+---------+-------------------'           '-------------------+---------+---------+---------+---------+---------|
  * |         |         |         |         |         |                                                   |         |         |         |         |         |
@@ -120,7 +120,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,    KC_NO,    KC_NO,    KC_PIPE,  KC_DLR,   KC_PERC,  KC_ASTR,
         KC_NO,    KC_NO,    KC_TILD,  KC_LBRC,  KC_RBRC,  KC_EXLM,  KC_MINUS,
         KC_PERC,  KC_AT,    KC_EQL,   KC_LPRN,  KC_RPRN,  KC_UNDS,
-        KC_GRV,   KC_CIRC,  KC_HASH,  KC_LCBR,  KC_RCBR,  KC_AMPR,  KC_PLUS,
+        KC_CIRC,  KC_GRV,   KC_HASH,  KC_LCBR,  KC_RCBR,  KC_AMPR,  KC_PLUS,
         KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,
         //-----------------------------------------------------------------------------------------------//
                                                           KC_TRNS,  KC_TRNS,
